@@ -15,7 +15,7 @@ const config = {
         test: /\.html$/,
         use: [
           {
-            loader: 'html-loader',
+            loader: 'file-loader?name=[name].[ext]',
           },
           {
             loader: 'posthtml-loader',
@@ -23,13 +23,13 @@ const config = {
         ],
       },
     ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './src/index.html',
-    }),
-  ],
+  }
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     filename: 'index.html',
+  //     template: './src/index.html',
+  //   }),
+  // ],
 };
 
 module.exports = config;
