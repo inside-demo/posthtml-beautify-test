@@ -1,7 +1,5 @@
-module.exports = (ctx) => {
-  return {
-    plugins: {
-      'posthtml-beautify': {}
-    }
-  }
-}
+module.exports = {
+  plugins: [
+    require('posthtml-beautify')({}),
+  ]
+};
