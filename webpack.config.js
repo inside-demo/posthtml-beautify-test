@@ -6,7 +6,7 @@ const config = {
     app: './src/js/app.js',
   },
   output: {
-    filename: 'app.bundle.js',
+    filename: '[name].bundle.js?v=[hash]',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -16,10 +16,7 @@ const config = {
         use: [
           {
             loader: 'html-loader',
-          },
-          {
-            loader: 'posthtml-loader',
-          },
+          }
         ],
       },
     ],
