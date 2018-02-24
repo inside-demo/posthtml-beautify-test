@@ -16,7 +16,10 @@ const config = {
         use: [
           {
             loader: 'html-loader',
-          }
+          },
+          {
+            loader: 'posthtml-loader',
+          },
         ],
       },
     ],
