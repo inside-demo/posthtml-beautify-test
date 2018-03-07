@@ -1,5 +1,7 @@
 module.exports = {
   plugins: [
-    require('posthtml-include')(),
+    require('posthtml-include')({
+        test: console.log('TEST'),
+    }),
   ],
 };

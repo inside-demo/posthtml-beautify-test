@@ -18,17 +18,8 @@
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.10"
   },
-  "posthtml": {
-    "plugins": {
-      "posthtml-beautify": {
-        "rules": {
-          "blankLines": false
-        }
-      }
-    }
-  },
   "scripts": {
-    "build": "rm -rf ./dist && webpack && npm run html",
+    "build": "rm -rf ./dist && webpack",
     "html": "posthtml dist/*.html"
   },
   "author": "@andreyvolokitin",
