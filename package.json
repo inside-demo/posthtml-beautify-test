@@ -19,8 +19,8 @@
     "webpack-cli": "^2.0.10"
   },
   "scripts": {
-    "build": "rm -rf ./dist && webpack",
-    "html": "posthtml dist/*.html"
+    "build": "rm -rf ./dist && webpack && npm run html",
+    "html": "posthtml dist/*.html -c /Users/andreyvolokitin/webdev/sandbox/posthtml-beautify-test/posthtml-cli.config.js"
   },
   "author": "@andreyvolokitin",
   "license": "ISC"
