@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "rm -rf ./dist && webpack && npm run html",
-    "html": "posthtml dist/*.html -c /Users/andreyvolokitin/webdev/sandbox/posthtml-beautify-test/posthtml-cli.config.js"
+    "html": "posthtml dist/*.html -c posthtml-cli.config.js"
   },
   "author": "@andreyvolokitin",
   "license": "ISC"
